@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+*,
+*::after,
+*::before {
+  font-family: $font-alata;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  transition: all ease-in-out 300ms;
+}
+
+.padd {
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
+  // padding-top: 2.8125rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}

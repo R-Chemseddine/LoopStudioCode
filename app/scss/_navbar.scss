@@ -1,0 +1,155 @@
+.logo {
+  font-size: 1rem;
+  color: $white;
+  z-index: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: $black;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  animation: 0.3s overl forwards;
+}
+
+.overlay-out {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: $black;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  animation: 0.3s overla forwards;
+}
+
+.burger {
+  width: 1.5625rem;
+  height: 1.125rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+
+  .line1,
+  .line2,
+  .line3 {
+    width: 1.5625rem;
+    background-color: $white;
+    height: 0.125rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .line2,
+  .line3 {
+    margin-top: 0.375rem;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open {
+  .line1 {
+    transform: rotate(45deg) translate(0.3125rem, 0.3125rem);
+  }
+  .line2 {
+    background: transparent;
+  }
+  .line3 {
+    transform: rotate(-45deg) translate(0.375rem, -0.375rem);
+  }
+}
+
+nav {
+  position: relative;
+  padding-top: 2.8125rem;
+}
+
+.links {
+  position: absolute;
+  z-index: 1;
+  margin-top: 10.3125rem;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  transform: translatey(80%);
+}
+a {
+  text-decoration: none;
+  color: $white;
+  display: block;
+  margin-bottom: 1.875rem;
+  text-transform: uppercase;
+  font-family: $font-josephine;
+  font-size: 1.125rem;
+}
+
+.visible {
+  animation: 0.3s overl forwards;
+}
+
+.notvisible {
+  animation: 0.3s overla forwards;
+}
+
+.scroll {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 700px) {
+  nav {
+    .burger {
+      display: none;
+    }
+  }
+  .links {
+    opacity: 1;
+    visibility: visible;
+    flex-direction: row;
+    margin: 0;
+    position: relative;
+    transform: none;
+    align-items: center;
+  }
+  a {
+    border: none;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+
+  a + a {
+    margin-left: 1em;
+  }
+
+  a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 80vw;
+  }
+
+  a:hover::after,
+  a:focus::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 80vw;
+  }
+}

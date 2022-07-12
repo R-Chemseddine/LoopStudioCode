@@ -1,0 +1,66 @@
+footer {
+  background-color: $black;
+  height: 29.375rem;
+  .footer-logo {
+    margin-top: 2.5rem;
+    font-size: 1.625rem;
+    font-style: $font-alata;
+    margin-bottom: 2.1875rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li {
+      color: $white;
+      text-decoration: none;
+      list-style: none;
+      margin-bottom: 1.875rem;
+      font-size: 0.75rem;
+      font-family: $font-alata;
+    }
+  }
+
+  p {
+    margin-top: 1.25rem;
+    color: $dark-gray;
+    text-align: center;
+    font-size: 0.8125rem;
+  }
+
+  .icons {
+    margin-top: 0.625rem;
+    img {
+      margin: 0 0.625rem;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 1em;
+
+    ul {
+      flex-direction: row;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+
+      align-items: flex-start;
+    }
+    .right {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+    }
+    .footer-logo {
+      margin: 0.5em 0;
+    }
+  }
+}

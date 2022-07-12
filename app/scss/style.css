@@ -1,0 +1,713 @@
+@-webkit-keyframes overl {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes overl {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes overla {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes overla {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+*,
+*::after,
+*::before {
+  font-family: "Alata", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+}
+
+.padd {
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo {
+  font-size: 1rem;
+  color: white;
+  z-index: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-animation: 0.3s overl forwards;
+          animation: 0.3s overl forwards;
+}
+
+.overlay-out {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-animation: 0.3s overla forwards;
+          animation: 0.3s overla forwards;
+}
+
+.burger {
+  width: 1.5625rem;
+  height: 1.125rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.burger .line1,
+.burger .line2,
+.burger .line3 {
+  width: 1.5625rem;
+  background-color: white;
+  height: 0.125rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger .line2,
+.burger .line3 {
+  margin-top: 0.375rem;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.open .line1 {
+  -webkit-transform: rotate(45deg) translate(0.3125rem, 0.3125rem);
+          transform: rotate(45deg) translate(0.3125rem, 0.3125rem);
+}
+
+.open .line2 {
+  background: transparent;
+}
+
+.open .line3 {
+  -webkit-transform: rotate(-45deg) translate(0.375rem, -0.375rem);
+          transform: rotate(-45deg) translate(0.375rem, -0.375rem);
+}
+
+nav {
+  position: relative;
+  padding-top: 2.8125rem;
+}
+
+.links {
+  position: absolute;
+  z-index: 1;
+  margin-top: 10.3125rem;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translatey(80%);
+          transform: translatey(80%);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-bottom: 1.875rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.125rem;
+}
+
+.visible {
+  -webkit-animation: 0.3s overl forwards;
+          animation: 0.3s overl forwards;
+}
+
+.notvisible {
+  -webkit-animation: 0.3s overla forwards;
+          animation: 0.3s overla forwards;
+}
+
+.scroll {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 700px) {
+  nav .burger {
+    display: none;
+  }
+  .links {
+    opacity: 1;
+    visibility: visible;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0;
+    position: relative;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  a {
+    border: none;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+  a + a {
+    margin-left: 1em;
+  }
+  a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 80vw;
+  }
+  a:hover::after,
+  a:focus::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 80vw;
+  }
+}
+
+.hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/loopstudio code/images/mobile/image-hero.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/loopstudio code/images/mobile/image-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40.625rem;
+}
+
+.maintext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10.625rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.maintext h1 {
+  max-width: 20.3125rem;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.35rem;
+  border: 2px solid white;
+  font-weight: 300;
+  padding: 1.5rem 1.8rem;
+  text-transform: uppercase;
+  line-height: 2.375rem;
+}
+
+.bod {
+  padding-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.bod .imgg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60vw;
+  margin-top: 5.9375rem;
+}
+
+.bod .lead {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.5625rem;
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 3.125rem;
+  text-align: center;
+  max-width: 350px;
+}
+
+.bod .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bod .tac {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 1.5625rem;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  font-weight: 700;
+  color: #8c8c8c;
+  width: 14rem;
+}
+
+.bod .btnorder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bod .creat {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  margin-top: 6rem;
+  font-size: 1.5625rem;
+  margin-bottom: 3.5rem;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.bod .imag {
+  height: 30vw;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 1.5625rem;
+  color: white;
+  padding-top: 15%;
+  padding-right: 50%;
+  padding-left: 8%;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.bod .imag0 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/loopstudio code/images/mobile/image-deep-earth.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/loopstudio code/images/mobile/image-deep-earth.jpg");
+}
+
+.bod .imag1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/loopstudio code/images/mobile/image-night-arcade.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/loopstudio code/images/mobile/image-night-arcade.jpg");
+}
+
+.bod .imag2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/loopstudio code/images/mobile/image-soccer-team.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/loopstudio code/images/mobile/image-soccer-team.jpg");
+}
+
+.bod .imag3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/loopstudio code/images/mobile/image-grid.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/loopstudio code/images/mobile/image-grid.jpg");
+}
+
+.bod .imag4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/loopstudio code/images/mobile/image-from-above.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/loopstudio code/images/mobile/image-from-above.jpg");
+}
+
+.bod .imag5 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/loopstudio code/images/mobile/image-pocket-borealis.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/loopstudio code/images/mobile/image-pocket-borealis.jpg");
+}
+
+.bod .imag6 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/loopstudio code/images/mobile/image-curiosity.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/loopstudio code/images/mobile/image-curiosity.jpg");
+}
+
+.bod .imag7 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/loopstudio code/images/mobile/image-fisheye.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/loopstudio code/images/mobile/image-fisheye.jpg");
+}
+
+.bod .btn {
+  margin-top: 0.625rem;
+  height: 2.5rem;
+  width: 10rem;
+  margin-bottom: 6rem;
+  background-color: white;
+  border: 1px solid black;
+  color: dimgray;
+  font-size: 0.6875rem;
+  letter-spacing: 0.4375rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.bod .gallery {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media only screen and (min-width: 700px) {
+  .padd {
+    padding-left: 82px;
+    padding-right: 82px;
+  }
+  .maintext {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 8em;
+  }
+  .maintext h1 {
+    font-size: 4em;
+    max-width: 600px;
+    line-height: 1em;
+    padding: 0.5em 0.5em;
+  }
+  .hero {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/loopstudio code/images/desktop/image-hero.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/loopstudio code/images/desktop/image-hero.jpg");
+    height: 100vh;
+    background-color: #654583;
+    background-blend-mode: darken;
+    background-size: cover;
+    margin-bottom: 0;
+  }
+  .bod .imgg {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: auto;
+    background-image: url("/loopstudio code/images/desktop/image-interactive.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+  }
+  .bod .imgg img {
+    display: none;
+  }
+  .bod .secondary {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 5.9375rem 0.5fr 0.5fr;
+        grid-template-rows: 5.9375rem 0.5fr 0.5fr;
+  }
+  .bod .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 400px;
+    padding: 2em 2em;
+    background-color: white;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  .bod .lead {
+    font-size: 2rem;
+    max-width: 450px;
+  }
+  .bod .gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .bod .imag0 {
+    background: url("/loopstudio code/images/desktop/image-deep-earth.jpg");
+  }
+  .bod .imag1 {
+    background: url("/loopstudio code/images/desktop/image-night-arcade.jpg");
+  }
+  .bod .imag2 {
+    background: url("/loopstudio code/images/desktop/image-soccer-team.jpg");
+  }
+  .bod .imag3 {
+    background: url("/loopstudio code/images/desktop/image-grid.jpg");
+  }
+  .bod .imag4 {
+    background: url("/loopstudio code/images/desktop/image-from-above.jpg");
+  }
+  .bod .imag5 {
+    background: url("/loopstudio code/images/desktop/image-pocket-borealis.jpg");
+  }
+  .bod .imag6 {
+    background: url("/loopstudio code/images/desktop/image-curiosity.jpg");
+  }
+  .bod .imag7 {
+    background: url("/loopstudio code/images/desktop/image-fisheye.jpg");
+  }
+  .bod .imag {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-bottom: 20%;
+    font-size: 1.6rem;
+  }
+  .bod .btnorder {
+    display: -ms-grid;
+    display: grid;
+    grid-row: repeat(3, auto);
+    grid-auto-rows: minmax(20vh, auto);
+  }
+  .bod .btn {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    margin: auto 0;
+    margin-left: auto;
+  }
+  .bod .creat {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    margin: auto 0;
+    text-align: left;
+  }
+  .bod .gallery {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  .bod .btn:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+footer {
+  background-color: black;
+  height: 29.375rem;
+}
+
+footer .footer-logo {
+  margin-top: 2.5rem;
+  font-size: 1.625rem;
+  font-style: "Alata", sans-serif;
+  margin-bottom: 2.1875rem;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul li {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  margin-bottom: 1.875rem;
+  font-size: 0.75rem;
+  font-family: "Alata", sans-serif;
+}
+
+footer p {
+  margin-top: 1.25rem;
+  color: #8c8c8c;
+  text-align: center;
+  font-size: 0.8125rem;
+}
+
+footer .icons {
+  margin-top: 0.625rem;
+}
+
+footer .icons img {
+  margin: 0 0.625rem;
+}
+
+@media screen and (min-width: 700px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    padding: 1em;
+  }
+  footer ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-logo {
+    margin: 0.5em 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

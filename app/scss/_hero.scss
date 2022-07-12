@@ -1,0 +1,307 @@
+// HERO
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/loopstudio\ code/images/mobile/image-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40.625rem;
+}
+.maintext {
+  display: flex;
+  margin-top: 10.625rem;
+  justify-content: center;
+
+  h1 {
+    // height: 12.5rem;
+    max-width: 20.3125rem;
+    color: $white;
+    font-family: $font-josephine;
+    font-size: 2.35rem;
+    border: 2px solid $white;
+    font-weight: 300;
+    padding: 1.5rem 1.8rem;
+    text-transform: uppercase;
+    line-height: 2.375rem;
+  }
+}
+
+// PART2
+
+.bod {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .imgg {
+    display: flex;
+    justify-content: center;
+    height: 60vw;
+    margin-top: 5.9375rem;
+  }
+
+  .lead {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.5625rem;
+    font-family: $font-josephine;
+    padding-top: 3.125rem;
+    text-align: center;
+    max-width: 350px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tac {
+    align-self: center;
+    margin-top: 1.5625rem;
+    font-family: $font-josephine;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    font-weight: 700;
+    color: #8c8c8c;
+    width: 14rem;
+  }
+  .btnorder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .creat {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-josephine;
+    font-weight: 300;
+    margin-top: 6rem;
+    font-size: 1.5625rem;
+    margin-bottom: 3.5rem;
+    order: 1;
+  }
+
+  .imag {
+    height: 30vw;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1.5625rem;
+    color: $white;
+    padding-top: 15%;
+    padding-right: 50%;
+    padding-left: 8%;
+    text-transform: uppercase;
+    font-family: $font-josephine;
+  }
+
+  .imag0 {
+    // background-image: url("/loopstudio code/images/mobile/image-deep-earth.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/loopstudio\ code/images/mobile/image-deep-earth.jpg");
+  }
+
+  .imag1 {
+    // background-image: url("/loopstudio code/images/mobile/image-night-arcade.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/loopstudio\ code/images/mobile/image-night-arcade.jpg");
+  }
+  .imag2 {
+    // background-image: url("/loopstudio code/images/mobile/image-soccer-team.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/loopstudio\ code/images/mobile/image-soccer-team.jpg");
+  }
+  .imag3 {
+    // background-image: url("/loopstudio code/images/mobile/image-grid.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/loopstudio\ code/images/mobile/image-grid.jpg");
+  }
+  .imag4 {
+    // background-image: url("/loopstudio code/images/mobile/image-from-above.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/loopstudio\ code/images/mobile/image-from-above.jpg");
+  }
+  .imag5 {
+    // background-image: url("/loopstudio code/images/mobile/image-pocket-borealis.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/loopstudio\ code/images/mobile/image-pocket-borealis.jpg");
+  }
+  .imag6 {
+    // background-image: url("/loopstudio code/images/mobile/image-curiosity.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/loopstudio\ code/images/mobile/image-curiosity.jpg");
+  }
+  .imag7 {
+    // background-image: url("/loopstudio code/images/mobile/image-fisheye.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/loopstudio\ code/images/mobile/image-fisheye.jpg");
+  }
+
+  .btn {
+    margin-top: 0.625rem;
+    height: 2.5rem;
+    width: 10rem;
+    margin-bottom: 6rem;
+    background-color: $white;
+    border: 1px solid $black;
+    color: $very-dark-gray;
+    font-size: 0.6875rem;
+    letter-spacing: 0.4375rem;
+    align-self: center;
+    cursor: pointer;
+    order: 3;
+  }
+
+  .gallery {
+    order: 2;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .padd {
+    padding-left: 82px;
+    padding-right: 82px;
+  }
+  .maintext {
+    justify-content: flex-start;
+    margin-top: 8em;
+    h1 {
+      font-size: 4em;
+      // width: 325px;
+      max-width: (600px);
+      line-height: 1em;
+      padding: 0.5em 0.5em;
+    }
+  }
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/loopstudio\ code/images/desktop/image-hero.jpg");
+    height: 100vh;
+    background-color: #654583;
+    background-blend-mode: darken;
+    background-size: cover;
+    // background-position: top;
+    margin-bottom: 0;
+  }
+
+  .bod {
+    .imgg {
+      justify-content: flex-start;
+      height: auto;
+
+      background-image: url("/loopstudio\ code/images/desktop/image-interactive.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      margin: 0;
+      grid-column: 1/3;
+      grid-row: 2/4;
+
+      img {
+        display: none;
+      }
+    }
+
+    .secondary {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 5.9375rem 0.5fr 0.5fr;
+    }
+    .text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      min-width: 400px;
+      padding: 2em 2em;
+      background-color: $white;
+      grid-column: 2/4;
+      grid-row: 3/4;
+    }
+
+    .lead {
+      font-size: 2rem;
+      max-width: 450px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1em;
+      order: 3;
+    }
+
+    .imag0 {
+      background: url("/loopstudio\ code/images/desktop/image-deep-earth.jpg");
+      // background-image: url("/images/desktop/image-deep-earth.jpg");
+    }
+
+    .imag1 {
+      // background-image: url("/loopstudio code/images/mobile/image-night-arcade.jpg");
+      background: url("/loopstudio\ code/images/desktop/image-night-arcade.jpg");
+    }
+
+    .imag2 {
+      // background-image: url("/loopstudio code/images/mobile/image-soccer-team.jpg");
+      background: url("/loopstudio\ code/images/desktop/image-soccer-team.jpg");
+    }
+    .imag3 {
+      // background-image: url("/loopstudio code/images/mobile/image-grid.jpg");
+      background: url("/loopstudio\ code/images/desktop/image-grid.jpg");
+    }
+    .imag4 {
+      // background-image: url("/loopstudio code/images/mobile/image-from-above.jpg");
+      background: url("/loopstudio\ code/images/desktop/image-from-above.jpg");
+    }
+    .imag5 {
+      // background-image: url("/loopstudio code/images/mobile/image-pocket-borealis.jpg");
+      background: url("/loopstudio\ code/images/desktop/image-pocket-borealis.jpg");
+    }
+    .imag6 {
+      // background-image: url("/loopstudio code/images/mobile/image-curiosity.jpg");
+      background: url("/loopstudio\ code/images/desktop/image-curiosity.jpg");
+    }
+    .imag7 {
+      // background-image: url("/loopstudio code/images/mobile/image-fisheye.jpg");
+      background: url("/loopstudio\ code/images/desktop/image-fisheye.jpg");
+    }
+
+    .imag {
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 20%;
+      font-size: 1.6rem;
+    }
+    .btnorder {
+      display: grid;
+      grid-row: repeat(3, auto);
+      grid-auto-rows: minmax(20vh, auto);
+    }
+    .btn {
+      grid-row: 1/2;
+      margin: auto 0;
+      margin-left: auto;
+    }
+    .creat {
+      grid-row: 1/2;
+      margin: auto 0;
+      text-align: left;
+    }
+    .gallery {
+      grid-row: 2/3;
+      grid-column: 1/3;
+    }
+
+    .btn:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
