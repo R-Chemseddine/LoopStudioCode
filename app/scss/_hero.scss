@@ -1,7 +1,7 @@
 // HERO
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/mobile/image-hero.jpg");
+    url("../../images/mobile/image-hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,45 +99,45 @@
   }
 
   .imag0 {
-    // background-image: url("/loopstudio codeimages/mobile/image-deep-earth.jpg");
+    // background-image: url("/loopstudio code../../images/mobile/image-deep-earth.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("images/mobile/image-deep-earth.jpg");
+      url("../../images/mobile/image-deep-earth.jpg");
   }
 
   .imag1 {
-    // background-image: url("/loopstudio codeimages/mobile/image-night-arcade.jpg");
+    // background-image: url("/loopstudio code../../images/mobile/image-night-arcade.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("images/mobile/image-night-arcade.jpg");
+      url("../../images/mobile/image-night-arcade.jpg");
   }
   .imag2 {
-    // background-image: url("/loopstudio codeimages/mobile/image-soccer-team.jpg");
+    // background-image: url("/loopstudio code../../images/mobile/image-soccer-team.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("images/mobile/image-soccer-team.jpg");
+      url("../../images/mobile/image-soccer-team.jpg");
   }
   .imag3 {
-    // background-image: url("/loopstudio codeimages/mobile/image-grid.jpg");
+    // background-image: url("/loopstudio code../../images/mobile/image-grid.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("images/mobile/image-grid.jpg");
+      url("../../images/mobile/image-grid.jpg");
   }
   .imag4 {
-    // background-image: url("/loopstudio codeimages/mobile/image-from-above.jpg");
+    // background-image: url("/loopstudio code../../images/mobile/image-from-above.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("images/mobile/image-from-above.jpg");
+      url("../../images/mobile/image-from-above.jpg");
   }
   .imag5 {
-    // background-image: url("/loopstudio codeimages/mobile/image-pocket-borealis.jpg");
+    // background-image: url("/loopstudio code../../images/mobile/image-pocket-borealis.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("images/mobile/image-pocket-borealis.jpg");
+      url("../../images/mobile/image-pocket-borealis.jpg");
   }
   .imag6 {
-    // background-image: url("/loopstudio codeimages/mobile/image-curiosity.jpg");
+    // background-image: url("/loopstudio code../../images/mobile/image-curiosity.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("images/mobile/image-curiosity.jpg");
+      url("../../images/mobile/image-curiosity.jpg");
   }
   .imag7 {
-    // background-image: url("/loopstudio codeimages/mobile/image-fisheye.jpg");
+    // background-image: url("/loopstudio code../../images/mobile/image-fisheye.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("images/mobile/image-fisheye.jpg");
+      url("../../images/mobile/image-fisheye.jpg");
   }
 
   .btn {
@@ -178,7 +178,7 @@
   }
   .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("images/desktop/image-hero.jpg");
+      url("../../images/desktop/image-hero.jpg");
     height: 100vh;
     background-color: #654583;
     background-blend-mode: darken;
@@ -192,7 +192,7 @@
       justify-content: flex-start;
       height: auto;
 
-      background-image: url("images/desktop/image-interactive.jpg");
+      background-image: url("../../images/desktop/image-interactive.jpg");
       background-repeat: no-repeat;
       background-size: contain;
 
@@ -235,38 +235,38 @@
     }
 
     .imag0 {
-      background: url("images/desktop/image-deep-earth.jpg");
-      // background-image: url("images/desktop/image-deep-earth.jpg");
+      background: url("../../images/desktop/image-deep-earth.jpg");
+      // background-image: url("../../images/desktop/image-deep-earth.jpg");
     }
 
     .imag1 {
-      // background-image: url("/loopstudio codeimages/mobile/image-night-arcade.jpg");
-      background: url("images/desktop/image-night-arcade.jpg");
+      // background-image: url("/loopstudio code../../images/mobile/image-night-arcade.jpg");
+      background: url("../../images/desktop/image-night-arcade.jpg");
     }
 
     .imag2 {
-      // background-image: url("/loopstudio codeimages/mobile/image-soccer-team.jpg");
-      background: url("images/desktop/image-soccer-team.jpg");
+      // background-image: url("/loopstudio code../../images/mobile/image-soccer-team.jpg");
+      background: url("../../images/desktop/image-soccer-team.jpg");
     }
     .imag3 {
-      // background-image: url("/loopstudio codeimages/mobile/image-grid.jpg");
-      background: url("images/desktop/image-grid.jpg");
+      // background-image: url("/loopstudio code../../images/mobile/image-grid.jpg");
+      background: url("../../images/desktop/image-grid.jpg");
     }
     .imag4 {
-      // background-image: url("/loopstudio codeimages/mobile/image-from-above.jpg");
-      background: url("images/desktop/image-from-above.jpg");
+      // background-image: url("/loopstudio code../../images/mobile/image-from-above.jpg");
+      background: url("../../images/desktop/image-from-above.jpg");
     }
     .imag5 {
-      // background-image: url("/loopstudio codeimages/mobile/image-pocket-borealis.jpg");
-      background: url("images/desktop/image-pocket-borealis.jpg");
+      // background-image: url("/loopstudio code../../images/mobile/image-pocket-borealis.jpg");
+      background: url("../../images/desktop/image-pocket-borealis.jpg");
     }
     .imag6 {
-      // background-image: url("/loopstudio codeimages/mobile/image-curiosity.jpg");
-      background: url("images/desktop/image-curiosity.jpg");
+      // background-image: url("/loopstudio code../../images/mobile/image-curiosity.jpg");
+      background: url("../../images/desktop/image-curiosity.jpg");
     }
     .imag7 {
-      // background-image: url("/loopstudio codeimages/mobile/image-fisheye.jpg");
-      background: url("images/desktop/image-fisheye.jpg");
+      // background-image: url("/loopstudio code../../images/mobile/image-fisheye.jpg");
+      background: url("../../images/desktop/image-fisheye.jpg");
     }
 
     .imag {
